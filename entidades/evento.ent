@@ -1,0 +1,42 @@
+/*
+Eventos que se organiza el GLUD
+*/
+
+entity evento {
+	nombre: string  //nombre del evento
+	tema: string //Tema del evento
+	fecha: //Fecha del evento
+	direccion: //
+	patrocinadores: patrocinadores
+	organizador: organizador 
+	publicidad: publicidad 
+        conferencistas: conferencistas
+	solicitudes://cartpas solicitudes a administrativos 
+	gastos: //Los gastos que se realizaron camisetas, comida, agua 
+}
+
+entity patrocinadores {
+	nombre: string //nombre de persona u orgnización de patrocinio
+	descripción: string //descripbir el patrocinio que realizo
+	dinero: boolean //Si el patrocinio fue en dinero
+	
+}
+
+entity publicidad {
+	nombre: //nombre de la publicidad afiche evento tal
+	tipo: //tipo de publicidad afiche, diseño stickers, diseño pocillos
+	autor: //quien la hizo
+	estado: //estado: en proceso, final, revisada 
+}
+
+entity organizador{
+	nombre: string //nombre de la persona encargada
+	item: string //Conferencias, hackathon, refrigerios 
+	tarea: tarea
+}
+
+entity tarea {
+	nombre_tarea: string //nombre de la tarea
+	descripción: string //descripción de la tarea
+	Estado: string //estado de la tarea 
+}
