@@ -5,9 +5,9 @@ Preparación del entorno:
 - Python 2-x
 - Jinja
 
-	$ pip install jinja2
+'$ pip install jinja2'
 
 - textX
 
-	$ pip install textX
+'$ pip install textX'
 
