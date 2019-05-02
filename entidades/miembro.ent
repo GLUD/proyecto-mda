@@ -1,0 +1,26 @@
+entity Miembro{
+  nombre: string
+  apellido: string
+  estado: Estado         //Falta definir 
+  codigo_academico: int //Verificar cuando NO son estudiantes UD
+  cuenta:  Cuenta   //Cuentas de usuario o medios de comunicación asociadas al miembro
+  proyecto_curricular: string
+  
+}
+
+
+entity Cuenta{  //correo, telefono, telegram. github etc
+  tipo: string
+  valor: string
+}
+
+
+entity Estado{   
+  nombre: string
+  fecha_inicio: date
+  fecha_fin: date
+}
+
+
+
+

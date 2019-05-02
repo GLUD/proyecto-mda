@@ -1,0 +1,19 @@
+entity Proyecto{
+  nombre: string
+  tipo: strin //apropiacion, investigacion, traduccion, etc
+  miembros: list //miembros del proyecto
+  entregable: Entregable 
+  cronograma: list  //lista de actividades 
+]
+
+
+entity Entregable{
+   estado: string //anteproyecto, primera entrega, entrega final etc
+]
+
+entity Actividad{
+  nombre_actividad: string 
+  fecha_inicio: date
+  fecha_fin: date
+  delegado: miembro
+}

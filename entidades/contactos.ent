@@ -1,0 +1,6 @@
+entity Contacto{
+  nombre: string
+  tipo: string  //patrocinador, adminitratativo o algo
+  organizacion: string  //si pertenece a una comunidad u organización
+  cuenta: Cuenta 
+}
