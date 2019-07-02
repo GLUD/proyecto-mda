@@ -1,0 +1,13 @@
+{% for lib in modelLibs %}
+{{lib}};{{saltoLinea}}
+{% endfor %}
+
+let {{entity}}Schema = new Schema({
+    {% for atr in entityAtrDictList %}
+    {{atr['name']}}: {type: {{atr['type']}}, required: {{atr['required']}}, max: {{atr['max']}} },
+    {% endfor %}
+});
+
+module.exports = mongoose.model('{{entity}}', {{entity}}Schema);
+
+
