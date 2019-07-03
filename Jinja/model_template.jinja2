@@ -4,7 +4,7 @@
 
 let {{entity}}Schema = new Schema({
     {% for atr in entityAtrDictList %}
-    {{atr['name']}}: {type: {{atr['type']}}, required: {{atr['required']}}, max: {{atr['max']}} },
+    {{atr['name']}}: {type: {{atr['type']}}, required: {{atr['required']}}{% if 'max' in atr %}, max: {{atr['max']}} {% endif %} },
     {% endfor %}
 });
 
